@@ -49,7 +49,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	device/lge/mako/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
-	device/lge/mako/audio_policy.conf:system/etc/audio_policy.conf
+	device/lge/mako/audio_policy.conf:system/etc/audio_policy.conf \
+	device/lge/mako/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 PRODUCT_COPY_FILES += \
 	device/lge/mako/thermald-mako.conf:system/etc/thermald.conf
@@ -289,7 +290,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.min.fling_velocity=8000 \
         ro.config.hw_fast_dormancy=1 \
         net.dns1=8.8.4.4 \
-        net.dns2=8.8.8.8 
+        net.dns2=8.8.8.8 \
+        ro.semc.sound_effects_enabled=true \
+        ro.semc.xloud.supported=true \
+        htc.audio.alc.enable=1 \
+        htc.audio.swalt.enable=1 \
+        htc.audio.swalt.mingain=14512 \
+        persist.service.xloud.enable=1 \
+        persist.service.enhance.enable=1 \
+        ro.semc.clearaudio.supported=true \
+        persist.service.clearaudio.enable=1 \
+        ro.sony.walkman.logger=1 \
+        ro.somc.clearphase.supported=true \
+        persist.service.clearphase.enable=1
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
