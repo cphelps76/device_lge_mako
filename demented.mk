@@ -36,7 +36,7 @@ $(call inherit-product, vendor/DEMENTED/config/common_phone.mk)
 # products
 PRODUCT_DEVICE := mako
 PRODUCT_BRAND := Google
-PRODUCT_NAME := DEMENTED_mako
+PRODUCT_NAME := demented_mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=DEMENTED.mako.$(shell date +%m%d%y).$(shell date +%H%M%S)
