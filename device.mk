@@ -234,6 +234,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
+# DEMENTED bootanimation...Credit JaeKar
+PRODUCT_COPY_FILES +=  \
+    vendor/DEMENTED/prebuilt/common/media/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+
 # DEMENTED build.prop tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
         windowsmgr.max_events_per_sec=350 \
